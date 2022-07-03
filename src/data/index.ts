@@ -1,5 +1,9 @@
 // derived partly from https://github.com/aqiu384/aqiu384.github.io/blob/master/p5-tool/js/full_compendium.js
 
+// https://www.spriters-resource.com/playstation_3/persona5/
+// https://www.spriters-resource.com/mobile/personaoa/sheet/109712/
+// https://www.spriters-resource.com/mobile/personaoa/
+
 export const personaData = [
   {
     name: 'Ame-no-Uzum',
