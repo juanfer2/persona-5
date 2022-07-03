@@ -1,0 +1,42 @@
+version: 2.1
+# orbs:
+#   browser-tools: circleci/browser-tools@1.2.3
+jobs:
+  build:
+    docker:
+      - image: node:14.17.2
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run:
+          name: Install Docker client
+          command: |
+            set -x
+            VER="18.06.3-ce"
+            curl -L -o /tmp/docker-$VER.tgz https://download.docker.com/linux/static/stable/x86_64/docker-$VER.tgz
+            tar -xz -C /tmp -f /tmp/docker-$VER.tgz
+            mv /tmp/docker/* /usr/bin
+      - run:
+          name: Check install
+          command: |
+            node --version
+            yarn --version
+      - run:
+          name: Install node modules
+          command: yarn install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: Run Tests
+          command: yarn test
+
+    environment:
+      SKIP_PREFLIGHT_CHECK: true
+      REACT_APP_ENVIROMENT: TEST
+    parallelism: 3
