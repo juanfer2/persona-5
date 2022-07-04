@@ -1,7 +1,7 @@
 import React from 'react';
 
 import DefaulImage from '@/assets/images/personas/P_large_025.png';
-import { Element } from '@/components';
+import { Elem, Element } from '@/components';
 import { personaData } from '@/data';
 import { elementsData } from '@/data/elements';
 
@@ -28,9 +28,9 @@ function Persona({ name, image, arcana, elems }: Props) {
         <div className="elements">
           {elements &&
             elements.map((element: any, index: number) => (
-              <div key={element.id} className='elems'>
+              <div key={element.id} className="elems">
                 <Element image={element.image} name={element.name} />
-                {elems[index] !== '-' && <h2 className="elem">{elems[index]}</h2>}
+                {elems[index] !== '-' && <Elem type={elems[index] as any} />}
               </div>
             ))}
         </div>
