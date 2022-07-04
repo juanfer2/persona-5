@@ -3,6 +3,9 @@
 // https://www.spriters-resource.com/playstation_3/persona5/
 // https://www.spriters-resource.com/mobile/personaoa/sheet/109712/
 // https://www.spriters-resource.com/mobile/personaoa/
+
+// src/assets/images/personas/P_large_025.png
+
 import AilmentSkillsElement from '@/assets/images/elements/ailment_skills.png';
 import AlmightyElement from '@/assets/images/elements/almighty.png';
 import BlessElement from '@/assets/images/elements/bless.png';
@@ -18,8 +21,12 @@ import PhysElement from '@/assets/images/elements/phys.png';
 import PsychokinesisElement from '@/assets/images/elements/psychokinesis.png';
 import SupportSkillsElement from '@/assets/images/elements/support_skills.png';
 import WindElement from '@/assets/images/elements/wind.png';
+// personas
+import AmeNoUzume from '@/assets/images/personas/ame-no-uzume.png';
+import Ananta from '@/assets/images/personas/ananta.png';
+import Andras from '@/assets/images/personas/andras.png';
+import Angel from '@/assets/images/personas/angel.png';
 import { Element } from '@/models/elements';
-// 
 
 export const elementsData: Element[] = [
   {
@@ -102,7 +109,7 @@ export const elementsData: Element[] = [
 export const personaData = [
   {
     name: 'Ame-no-Uzume',
-    image: '@/assets/images/personas/ame-no-uzume.png',
+    image: AmeNoUzume,
     arcana: 'Lovers',
     level: 29,
     stats: [15, 22, 19, 20, 18],
@@ -118,7 +125,7 @@ export const personaData = [
   },
   {
     name: 'Ananta',
-    image: '',
+    image: Ananta,
     arcana: 'Star',
     level: 43,
     stats: [24, 30, 31, 26, 25],
@@ -136,7 +143,7 @@ export const personaData = [
   },
   {
     name: 'Andras',
-    image: '',
+    image: Andras,
     arcana: 'Devil',
     level: 10,
     stats: [5, 9, 7, 10, 6],
@@ -146,7 +153,7 @@ export const personaData = [
   },
   {
     name: 'Angel',
-    image: '',
+    image: Angel,
     arcana: 'Justice',
     level: 12,
     stats: [7, 9, 9, 9, 9],

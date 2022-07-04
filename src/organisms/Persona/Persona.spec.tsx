@@ -3,12 +3,10 @@ import React from 'react';
 
 import Persona from './index';
 
-const Props = {
-  
-};
+const Props = {};
 
 beforeEach(() => {
-	render(<Persona {...Props} />);	
+  render(<Persona {...Props} />);
 });
 
-test('Its rendering', () => { });
+test('Its rendering', () => {});

@@ -3,12 +3,10 @@ import React from 'react';
 
 import Element from './index';
 
-const Props = {
-  
-};
+const Props = {};
 
 beforeEach(() => {
-	render(<Element {...Props} />);	
+  render(<Element {...Props} />);
 });
 
-test('Its rendering', () => { });
+test('Its rendering', () => {});

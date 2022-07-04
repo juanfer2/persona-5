@@ -1,3 +1,4 @@
+import { personaData } from '@/data';
 import Persona from '@/organisms/Persona';
 
 import { HomeStyled } from './home.styles';
@@ -11,13 +12,14 @@ const Heading = styled('h1')`
 */
 
 function Home() {
+  const personas = personaData.slice(0, 10);
+
   return (
     <HomeStyled>
-      <Persona />
-      <Persona />
-      <Persona />
-      <Persona />
-      <Persona />
+      {personas &&
+        personas.map((persona: any) => (
+          <Persona key={persona.name} image={persona.image} name={persona.name} />
+        ))}
     </HomeStyled>
   );
 }

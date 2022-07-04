@@ -28,7 +28,6 @@ const PersonaStyled = styled.div`
     }
   }
 
-
   @keyframes float {
     0% {
       // box-shadow: 0 5px 15px 0px rgba(243, 228, 228, 0.1);

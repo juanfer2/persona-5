@@ -21,6 +21,14 @@
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "exclude": ["**/*.test.ts", "**/*.spec.ts", "**/*.stories.ts", "**/*.test.tsx",
-    "**/*.spec.tsx", "**/*.stories.tsx", "**/**/*.spec.ts", "**/**/*.spec.tsx",]
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/*.stories.ts",
+    "**/*.test.tsx",
+    "**/*.spec.tsx",
+    "**/*.stories.tsx",
+    "**/**/*.spec.ts",
+    "**/**/*.spec.tsx"
+  ]
 }

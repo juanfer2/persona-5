@@ -5,7 +5,7 @@ import { ElementStyled } from './Element.styles';
 interface Props {
   name: string;
   image: string;
-};
+}
 
 function Element({ name, image }: Props) {
   return (
