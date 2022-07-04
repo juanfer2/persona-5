@@ -9,10 +9,12 @@ const PersonaStyled = styled.div`
   padding: 10px;
 
   .image {
-    img {
-      transform: translatey(0px);
-      animation: float 6s ease-in-out infinite;
-    }
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
   }
 
   .info {

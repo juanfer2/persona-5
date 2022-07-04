@@ -18,7 +18,13 @@ function Home() {
     <HomeStyled>
       {personas &&
         personas.map((persona: any) => (
-          <Persona key={persona.name} image={persona.image} name={persona.name} />
+          <Persona
+            key={persona.name}
+            name={persona.name}
+            arcana={persona.arcana}
+            image={persona.image}
+            elems={persona.elems}
+          />
         ))}
     </HomeStyled>
   );

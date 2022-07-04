@@ -9,6 +9,14 @@ const HomeStyled = styled.div`
   img {
     width: 200px;
   }
+
+  .info {
+    .elements {
+      .elems {
+        text-align: center;
+      }
+    }
+  }
 `;
 
 export { HomeStyled };
