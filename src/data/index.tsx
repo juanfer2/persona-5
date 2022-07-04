@@ -19,6 +19,7 @@ import PsychokinesisElement from '@/assets/images/elements/psychokinesis.png';
 import SupportSkillsElement from '@/assets/images/elements/support_skills.png';
 import WindElement from '@/assets/images/elements/wind.png';
 import { Element } from '@/models/elements';
+// 
 
 export const elementsData: Element[] = [
   {

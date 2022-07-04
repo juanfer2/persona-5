@@ -4,6 +4,9 @@ const PersonaStyled = styled.div`
   display: flex;
   gap: 1em;
   place-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
 
   .image {
     img {
@@ -12,10 +15,19 @@ const PersonaStyled = styled.div`
     }
   }
 
-  .elements {
+  .info {
     display: flex;
+    flex-direction: column;
     gap: 1em;
+    width: 100%;
+
+    .elements {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50px, 50px));
+      gap: 1em;
+    }
   }
+
 
   @keyframes float {
     0% {
