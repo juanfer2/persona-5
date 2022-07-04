@@ -1,9 +1,7 @@
-import { Card } from '@mui/material';
-
-import { Character } from '@/models/character';
+import Persona from '@/organisms/Persona';
 
 import { HomeStyled } from './home.styles';
-import { useHome } from './useHome';
+// import { useHome } from './useHome';
 
 /*
 const Heading = styled('h1')`
@@ -13,16 +11,13 @@ const Heading = styled('h1')`
 */
 
 function Home() {
-  const { characters } = useHome();
-
   return (
     <HomeStyled>
-      {characters &&
-        characters.map((character: Character) => (
-          <Card key={character.id}>
-            <img src={character.image} alt={character.name} />
-          </Card>
-        ))}
+      <Persona />
+      <Persona />
+      <Persona />
+      <Persona />
+      <Persona />
     </HomeStyled>
   );
 }

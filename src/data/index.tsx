@@ -3,11 +3,105 @@
 // https://www.spriters-resource.com/playstation_3/persona5/
 // https://www.spriters-resource.com/mobile/personaoa/sheet/109712/
 // https://www.spriters-resource.com/mobile/personaoa/
+import AilmentSkillsElement from '@/assets/images/elements/ailment_skills.png';
+import AlmightyElement from '@/assets/images/elements/almighty.png';
+import BlessElement from '@/assets/images/elements/bless.png';
+import CurseElement from '@/assets/images/elements/curse.png';
+import ElectricElement from '@/assets/images/elements/electric.png';
+import FireElement from '@/assets/images/elements/fire.png';
+import GunElement from '@/assets/images/elements/gun.png';
+import HealingSkillsElement from '@/assets/images/elements/healing_skills.png';
+import IceElement from '@/assets/images/elements/ice.png';
+import NuclearElement from '@/assets/images/elements/nuclear.png';
+import PassiveSkillsElement from '@/assets/images/elements/passive_skills.png';
+import PhysElement from '@/assets/images/elements/phys.png';
+import PsychokinesisElement from '@/assets/images/elements/psychokinesis.png';
+import SupportSkillsElement from '@/assets/images/elements/support_skills.png';
+import WindElement from '@/assets/images/elements/wind.png';
+import { Element } from '@/models/elements';
+
+export const elementsData: Element[] = [
+  {
+    id: 1,
+    name: 'phys',
+    image: PhysElement
+  },
+  {
+    id: 2,
+    name: 'fire',
+    image: FireElement
+  },
+  {
+    id: 3,
+    name: 'wind',
+    image: WindElement
+  },
+  {
+    id: 4,
+    name: 'nuclear',
+    image: NuclearElement
+  },
+  {
+    id: 5,
+    name: 'healing skills',
+    image: HealingSkillsElement
+  },
+  {
+    id: 6,
+    name: 'gun',
+    image: GunElement
+  },
+  {
+    id: 7,
+    name: 'ice',
+    image: IceElement
+  },
+  {
+    id: 8,
+    name: 'electric',
+    image: ElectricElement
+  },
+  {
+    id: 9,
+    name: 'psychokinesis',
+    image: PsychokinesisElement
+  },
+  {
+    id: 10,
+    name: 'support skills',
+    image: SupportSkillsElement
+  },
+  {
+    id: 11,
+    name: 'passive skills',
+    image: PassiveSkillsElement
+  },
+  {
+    id: 12,
+    name: 'bless',
+    image: BlessElement
+  },
+  {
+    id: 13,
+    name: 'curse',
+    image: CurseElement
+  },
+  {
+    id: 14,
+    name: 'almighty',
+    image: AlmightyElement
+  },
+  {
+    id: 15,
+    name: 'ailment skills',
+    image: AilmentSkillsElement
+  }
+];
 
 export const personaData = [
   {
-    name: 'Ame-no-Uzum',
-    image: '',
+    name: 'Ame-no-Uzume',
+    image: '@/assets/images/personas/ame-no-uzume.png',
     arcana: 'Lovers',
     level: 29,
     stats: [15, 22, 19, 20, 18],

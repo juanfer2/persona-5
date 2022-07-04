@@ -10,7 +10,9 @@ function App() {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <AppRouter />
+        <div className="main">
+          <AppRouter />
+        </div>
       </ThemeProvider>
     </BrowserRouter>
   );

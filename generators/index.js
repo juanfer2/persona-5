@@ -106,6 +106,72 @@ module.exports = (plop) => {
     ]
   });
 
+  plop.setGenerator('molecule', {
+    description: 'Create a molecule',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is your molecule name?'
+      }
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: '../src/molecules/{{properCase name}}/index.tsx',
+        templateFile: 'component/tsx.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/molecules/{{properCase name}}/{{properCase name}}.spec.tsx',
+        templateFile: 'component/test.tsx.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/molecules/{{properCase name}}/{{properCase name}}.stories.tsx',
+        templateFile: 'component/stories.tsx.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/molecules/{{properCase name}}/{{properCase name}}.styles.tsx',
+        templateFile: 'component/styles.tsx.hbs'
+      }
+    ]
+  });
+
+  plop.setGenerator('organism', {
+    description: 'Create a organism',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is your organism name?'
+      }
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: '../src/organisms/{{properCase name}}/index.tsx',
+        templateFile: 'component/tsx.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/organisms/{{properCase name}}/{{properCase name}}.spec.tsx',
+        templateFile: 'component/test.tsx.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/organisms/{{properCase name}}/{{properCase name}}.stories.tsx',
+        templateFile: 'component/stories.tsx.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/organisms/{{properCase name}}/{{properCase name}}.styles.tsx',
+        templateFile: 'component/styles.tsx.hbs'
+      }
+    ]
+  });
+
   plop.setGenerator('template', {
     description: 'Create a template',
     prompts: [
